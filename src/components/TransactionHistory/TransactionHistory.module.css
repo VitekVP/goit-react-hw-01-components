@@ -1,0 +1,31 @@
+.transaction_history {
+  width: 600px;
+
+  text-align: center;
+  border: 2px solid #a9a9a9;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+
+.transaction_head {
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #252424b9;
+}
+
+th {
+  padding: 10px;
+}
+
+tr {
+  height: 30px;
+}
+
+.transaction_string {
+  background-color: white;
+}
+
+.transaction_string:nth-child(2n) {
+  background-color: lightgrey;
+}
