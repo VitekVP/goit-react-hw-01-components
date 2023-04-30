@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const Item = styled.li`
   padding: 10px;
 
   display: flex;
@@ -8,28 +10,21 @@
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 0px 10px 0px #000000bf;
-}
+`;
 
-.status_true {
+export const Status = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: green;
-}
+  background-color: ${({ status }) => (status ? 'green' : 'red')};
+`;
 
-.status_false {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
-}
-
-.avatar {
+export const Avatar = styled.img`
   border-radius: 4px;
   border: 1px solid grey;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 24px;
   font-weight: 700;
-}
+`;
