@@ -18,12 +18,18 @@ export const TableHead = styled.thead`
 
 export const TableRow = styled.tr`
   height: 30px;
+
+  &:nth-child(2n) {
+    background-color: grey;
 `;
 
 export const TableHeadRow = styled.th`
   padding: 10px;
 
   border: 1px solid white;
+
+  
+  }
 `;
 
 export const TableBody = styled.tbody`
